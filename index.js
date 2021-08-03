@@ -10,9 +10,9 @@ app.use(express.static('public'))
 app.get('/', function(req, res) {
     console.log(__dirname+ "\Chrysler Building.html")
     //res.send('hi')
-    //res.sendFile(path.join(__dirname, "\Chrysler Building.html"));
-    res.sendFile(__dirname+ "/public/Chrysler Building.html");
-    //res.sendFile(path.join(__dirname, '\\index.html'));
+     
+    //res.sendFile(__dirname+ "/public/Chrysler Building.html");
+    res.sendFile(path.join(__dirname, 'index.html'));
 });
 
 app.listen(port, () => {
